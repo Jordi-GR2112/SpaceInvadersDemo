@@ -14,28 +14,49 @@ public class PlayerMovement : MonoBehaviour
 
     private float lastFired;
 
-    // Update is called once per frame
+    //Lock movement to screen
+    public Camera mainCamera;
+    private Vector2 screenLimits;
+    private float playerWd;
+    private float playerHt;
+
+    private void Start()
+    {
+        screenLimits = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z));
+        playerWd = transform.GetComponentInChildren<SpriteRenderer>().bounds.extents.x;
+        playerHt = transform.GetComponentInChildren<SpriteRenderer>().bounds.extents.y;
+    }
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) //Right movement
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //Right movement
         {
             transform.Translate(speed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))//Left movement
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))//Left movement
         {
             transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
-        else if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             //Firing!
             if(Time.time > (1/fireRate) + lastFired)
             {
-                Debug.Log("im firing!");
                 Instantiate(projectilePrefab, projectileSpawn.position, Quaternion.identity);
                 lastFired = Time.time;
 
             }
         }
 
+    }
+
+    private void LateUpdate() //Ship position is kept within screen boundaries. 
+    {
+        Vector3 currPos = transform.position;
+
+        currPos.x = Mathf.Clamp(currPos.x, -screenLimits.x + playerWd, screenLimits.x - playerWd);
+        currPos.y = Mathf.Clamp(currPos.y, -screenLimits.y + playerHt, screenLimits.y - playerHt);
+        transform.position = currPos;
     }
 }

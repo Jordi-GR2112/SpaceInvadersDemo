@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
 {
     public float TimeToLive = 5f;
     public float speed = 100f;
-
+    public int hitDamage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +23,9 @@ public class Projectile : MonoBehaviour
         transform.Translate(speed * Time.deltaTime * Vector2.up);
     }
 
-    private void DestroySelf()
+    public void DestroySelf()
     {
         Destroy(gameObject);
     }
+
 }
