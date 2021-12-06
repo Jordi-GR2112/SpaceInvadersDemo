@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 Instantiate(projectilePrefab, projectileSpawn.position, Quaternion.identity);
                 lastFired = Time.time;
-
             }
         }
 
@@ -58,5 +57,14 @@ public class PlayerMovement : MonoBehaviour
         currPos.x = Mathf.Clamp(currPos.x, -screenLimits.x + playerWd, screenLimits.x - playerWd);
         currPos.y = Mathf.Clamp(currPos.y, -screenLimits.y + playerHt, screenLimits.y - playerHt);
         transform.position = currPos;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Debug.Log($"hit by: {collision.name}");
+        if (collision.CompareTag("enemy"))
+        {
+            Debug.Log("game over!");
+        }
     }
 }

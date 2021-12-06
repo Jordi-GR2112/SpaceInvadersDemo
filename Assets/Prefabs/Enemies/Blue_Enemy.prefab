@@ -1,49 +1,44 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3887455661707051395
+--- !u!1001 &5959864131602935431
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6241721248201799249, guid: c9e8c1d5003089646972bbbac7d19a6b,
-        type: 3}
-      propertyPath: m_TagString
-      value: enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 6241721248201799251, guid: c9e8c1d5003089646972bbbac7d19a6b,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 466236c3dc49855458f37c27a43e1c54,
+      objectReference: {fileID: 21300000, guid: d88e82626245b7045a80bef7669c07dc,
         type: 3}
     - target: {fileID: 6241721248828715496, guid: c9e8c1d5003089646972bbbac7d19a6b,
         type: 3}
       propertyPath: m_Name
-      value: Red_Enemy
+      value: Blue_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: Type
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: HitPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: Points
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
         type: 3}
       propertyPath: Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 466236c3dc49855458f37c27a43e1c54,
+      objectReference: {fileID: 21300000, guid: d88e82626245b7045a80bef7669c07dc,
         type: 3}
-    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
-        type: 3}
-      propertyPath: HitPoint
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
-        type: 3}
-      propertyPath: Points
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241721248828715497, guid: c9e8c1d5003089646972bbbac7d19a6b,
-        type: 3}
-      propertyPath: Type
-      value: Red
-      objectReference: {fileID: 0}
     - target: {fileID: 6241721248828715498, guid: c9e8c1d5003089646972bbbac7d19a6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98,6 +93,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715499, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00029218197
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715499, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5199529
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715499, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0010149777
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241721248828715499, guid: c9e8c1d5003089646972bbbac7d19a6b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.4198385
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9e8c1d5003089646972bbbac7d19a6b, type: 3}

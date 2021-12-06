@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6147982584303153225}
   m_Layer: 0
   m_Name: BaseEnemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,6 +131,7 @@ MonoBehaviour:
   Sprite: {fileID: 0}
   HitPoint: 0
   Points: 0
+  mainCamera: {fileID: 0}
 --- !u!61 &6241721248828715499
 BoxCollider2D:
   m_ObjectHideFlags: 0

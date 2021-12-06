@@ -30,7 +30,7 @@ public class BaseEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"hit by: {collision.name}");
+        //Debug.Log($"hit by: {collision.name}");
         if(collision.CompareTag("projectile"))
         {
             var bullet = collision.gameObject.GetComponent<Projectile>();
