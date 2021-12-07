@@ -47,9 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d359a2ac529d32408cf2d8ba9b3f4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  fireRate: 1
-  projectilePrefab: {fileID: 0}
+  speed: 5
+  fireRate: 2
+  projectilePrefab: {fileID: 1091406594000948039, guid: 38472568d91d53249a8cb8811a7f5506,
+    type: 3}
   projectileSpawn: {fileID: 8576807692799205183}
   mainCamera: {fileID: 0}
 --- !u!61 &5184652963563143399
@@ -86,7 +87,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809173555442885183}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

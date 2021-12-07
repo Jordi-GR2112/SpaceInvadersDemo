@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Code made by Jordi Gonzalez Ramos
+/// This code is part of a test for a job application for an Unity developer position.
+/// </summary>
+/// 
 public class BaseEnemy : MonoBehaviour
 {
     public string Type; //green, blue, red...
@@ -23,14 +28,12 @@ public class BaseEnemy : MonoBehaviour
 
     public void DestroySelf()
     {
-        //TODO: send score to Player
-        Debug.Log("im dead!");
+        GameManager.Instance.UpdateScore(Points);
         Destroy(gameObject); 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log($"hit by: {collision.name}");
         if(collision.CompareTag("projectile"))
         {
             var bullet = collision.gameObject.GetComponent<Projectile>();

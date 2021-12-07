@@ -20,8 +20,12 @@ public class PlayerMovement : MonoBehaviour
     private float playerWd;
     private float playerHt;
 
+    Touch touch;
+
     private void Start()
     {
+        if (mainCamera == null) mainCamera = Camera.main;
+
         screenLimits = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, mainCamera.transform.position.z));
         playerWd = transform.GetComponentInChildren<SpriteRenderer>().bounds.extents.x;
         playerHt = transform.GetComponentInChildren<SpriteRenderer>().bounds.extents.y;
@@ -48,6 +52,31 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        if(Input.touchCount > 0)
+        {
+            touch = Input.GetTouch(0);
+            if(touch.phase == TouchPhase.Moved)
+            {
+                if(touch.deltaPosition.x > 0)
+                {
+                    transform.Translate(speed * Time.deltaTime, 0, 0);
+                }
+                else if(touch.deltaPosition.x < 0)
+                {
+                    transform.Translate(-speed * Time.deltaTime, 0, 0);
+                }
+            }
+            else if (touch.phase == TouchPhase.Began && touch.phase != TouchPhase.Stationary)
+            {
+                if (Time.time > (1 / fireRate) + lastFired)
+                {
+                    Instantiate(projectilePrefab, projectileSpawn.position, Quaternion.identity);
+                    lastFired = Time.time;
+                }
+            }
+        }
+
+
     }
 
     private void LateUpdate() //Ship position is kept within screen boundaries. 
@@ -64,7 +93,14 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log($"hit by: {collision.name}");
         if (collision.CompareTag("enemy"))
         {
+            GameManager.Instance.GameOver();
+            DestroySelf();
             Debug.Log("game over!");
         }
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }

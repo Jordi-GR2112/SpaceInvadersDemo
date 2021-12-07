@@ -13,6 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     public BaseEnemy[] EnemyTypes; //Enemy Pool to instantiate
     public GameObject EnemySpawnPoint;
+    public Vector3 SpawnInitPos;
 
     public int rows = 3; //instantiate enemies on a grid
     public int columns = 6;
@@ -21,14 +22,22 @@ public class EnemySpawner : MonoBehaviour
 
     public Vector3 movDirection = Vector2.right; //direction and speed the enemies will move
     public float speed;
+    internal bool canMove = false;
 
     private void Awake()
     {
         rows = EnemyTypes.Length;
+        SpawnInitPos = EnemySpawnPoint.transform.position;
+    }
+
+    public void InstantiateEnemies()
+    {
+        canMove = false;
+        EnemySpawnPoint.transform.position = SpawnInitPos;
 
         for (int row = 0; row < rows; row++)
         {
-            float width = spacing * (columns - 1); 
+            float width = spacing * (columns - 1);
             float height = spacing * (rows - 1);
 
             Vector2 gridPivot = new Vector2(-width / 2, -height / 2); // obtains the center of the gameobject that our enemies will be parented to.
@@ -43,6 +52,8 @@ public class EnemySpawner : MonoBehaviour
                 Enemy.transform.localPosition = pos;
             }
         }
+
+        canMove = true;
     }
 
     private void Start()
@@ -53,9 +64,10 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-
     private void Update()
     {
+        if(!canMove) { return; }
+
         EnemySpawnPoint.transform.position += movDirection * speed * Time.deltaTime;
 
         Vector3 leftBound = Camera.main.ViewportToWorldPoint(Vector3.zero);
@@ -74,13 +86,30 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    public int ReturnEnemiesLeft()
+    {
+        return EnemySpawnPoint.transform.childCount;
+    }
+
     public void SwapOrientation() //Swap orientation of movement and the swarm advances one spot towards the player
     {
         movDirection.x *= -1f;
 
         var curPos = EnemySpawnPoint.transform.position;
-        curPos.y -= .1f;
+        curPos.y -= .2f;
 
         EnemySpawnPoint.transform.position = curPos;
+    }
+
+    public void ClearEnemies()
+    {
+        canMove = false;
+
+        foreach(Transform child in EnemySpawnPoint.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        EnemySpawnPoint.transform.position = SpawnInitPos;
     }
 }
