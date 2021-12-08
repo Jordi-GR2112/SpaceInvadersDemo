@@ -101,7 +101,7 @@ public class EnemySpawner : MonoBehaviour
         movDirection.x *= -1f;
 
         var curPos = EnemySpawnPoint.transform.position;
-        curPos.y -= .3f;
+        curPos.y -= .15f;
 
         EnemySpawnPoint.transform.position = curPos;
     }
