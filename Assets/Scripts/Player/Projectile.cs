@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
     public float speed = 100f;
     public int hitDamage = 1;
 
+    public bool isEnemy = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,14 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(speed * Time.deltaTime * Vector2.up);
+        if (!isEnemy)
+        {
+            transform.Translate(speed * Time.deltaTime * Vector2.up);
+        }
+        else
+        {
+            transform.Translate(speed * Time.deltaTime * Vector2.down);
+        }
     }
 
     public void DestroySelf()

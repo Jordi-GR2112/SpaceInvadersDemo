@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
             if(Time.time > (1/fireRate) + lastFired)
             {
                 Instantiate(projectilePrefab, projectileSpawn.position, Quaternion.identity);
+                GameManager.Instance.PlayShootingPlayer();
                 lastFired = Time.time;
             }
         }

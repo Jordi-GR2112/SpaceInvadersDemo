@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: f2d8ad0718b6ab3408a9d798be72f2dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4239405548834666090
+    second: sprite_sheet_Mesa de trabajo 1_0
+  - first:
+      213: -837260979468291821
+    second: sprite_sheet_Mesa de trabajo 1_1
+  - first:
+      213: -3210768799268054955
+    second: sprite_sheet_Mesa de trabajo 1_2
+  - first:
+      213: -5740890059767953991
+    second: sprite_sheet_Mesa de trabajo 1_3
+  - first:
+      213: -4477104929350124058
+    second: sprite_sheet_Mesa de trabajo 1_4
+  - first:
+      213: -974995436788476710
+    second: sprite_sheet_Mesa de trabajo 1_5
+  - first:
+      213: 4565258700280866021
+    second: sprite_sheet_Mesa de trabajo 1_6
+  - first:
+      213: -3386264499395424335
+    second: sprite_sheet_Mesa de trabajo 1_7
+  - first:
+      213: 7696484901136063690
+    second: sprite_sheet_Mesa de trabajo 1_8
+  - first:
+      213: 7752413367449970958
+    second: sprite_sheet_Mesa de trabajo 1_9
+  - first:
+      213: 5279930665718873581
+    second: sprite_sheet_Mesa de trabajo 1_10
+  - first:
+      213: 5999596598436156881
+    second: sprite_sheet_Mesa de trabajo 1_11
+  - first:
+      213: 639249337221256455
+    second: sprite_sheet_Mesa de trabajo 1_12
+  - first:
+      213: 1058838762831776443
+    second: sprite_sheet_Mesa de trabajo 1_13
+  - first:
+      213: -1227844251856264338
+    second: sprite_sheet_Mesa de trabajo 1_14
+  - first:
+      213: -793384918267558469
+    second: sprite_sheet_Mesa de trabajo 1_15
+  - first:
+      213: 3986278973599457315
+    second: sprite_sheet_Mesa de trabajo 1_16
+  - first:
+      213: 3270439831963690616
+    second: sprite_sheet_Mesa de trabajo 1_17
+  - first:
+      213: -1487279079175011598
+    second: sprite_sheet_Mesa de trabajo 1_18
+  - first:
+      213: -2174699361924702470
+    second: sprite_sheet_Mesa de trabajo 1_19
+  - first:
+      213: 4646183779032565238
+    second: sprite_sheet_Mesa de trabajo 1_20
+  - first:
+      213: -5387963001657550360
+    second: sprite_sheet_Mesa de trabajo 1_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_6
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1198
+        width: 1260
+        height: 2694
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a002a99e0b5f30800000000000000
+      internalID: 4565258700280866021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_7
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 3612
+        width: 1098
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf050601629101d0800000000000000
+      internalID: -3386264499395424335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_8
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1270
+        width: 1087
+        height: 2231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc5f576d386fca60800000000000000
+      internalID: 7696484901136063690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_9
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 862
+        width: 572
+        height: 573
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0968d632ea169b60800000000000000
+      internalID: 7752413367449970958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1101
+        width: 1138
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded7dd857f4164940800000000000000
+      internalID: 5279930665718873581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_11
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1080
+        width: 1088
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5dd6da159d24350800000000000000
+      internalID: 5999596598436156881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_12
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 860
+        width: 1111
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 29, y: 29, z: 35, w: 30}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7051af3a2e11fd800800000000000000
+      internalID: 639249337221256455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_13
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 590
+        width: 1092
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba800dae30c1be00800000000000000
+      internalID: 1058838762831776443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_14
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 657
+        width: 1111
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 33, z: 35, w: 34}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e632a988822d5fee0800000000000000
+      internalID: -1227844251856264338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_15
+      rect:
+        serializedVersion: 2
+        x: 3038
+        y: 76
+        width: 401
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb58280de945df4f0800000000000000
+      internalID: -793384918267558469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 454
+        width: 841
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 29, y: 32, z: 33, w: 33}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32021053b9b125730800000000000000
+      internalID: 3986278973599457315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 251
+        width: 841
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 34, z: 33, w: 33}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f247e3be8f1c5be0800000000000000
+      internalID: -1487279079175011598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_sheet_Mesa de trabajo 1_19
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 65
+        width: 673
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe953fc37ae1d1e0800000000000000
+      internalID: -2174699361924702470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

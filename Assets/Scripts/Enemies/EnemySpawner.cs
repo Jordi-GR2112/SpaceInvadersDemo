@@ -11,18 +11,22 @@ public class EnemySpawner : MonoBehaviour
 {
     public static EnemySpawner Instance { private set; get; }
 
+    [Header("Enemy assets")]
     public BaseEnemy[] EnemyTypes; //Enemy Pool to instantiate
     public GameObject EnemySpawnPoint;
     public Vector3 SpawnInitPos;
 
+    [Header("Swarm grid settings")]
     public int rows = 3; //instantiate enemies on a grid
     public int columns = 6;
 
     public float spacing; //space between enemies row and col wise
-
-    public Vector3 movDirection = Vector2.right; //direction and speed the enemies will move
+    [Header ("Enemy movement")]
+    internal Vector3 movDirection = Vector2.right; //direction and speed the enemies will move
     public float speed;
     internal bool canMove = false;
+    internal float baseGain = .2f;
+    internal float lvlGain;
 
     private void Awake()
     {
@@ -33,7 +37,9 @@ public class EnemySpawner : MonoBehaviour
     public void InstantiateEnemies()
     {
         canMove = false;
+        movDirection = Vector3.right;
         EnemySpawnPoint.transform.position = SpawnInitPos;
+        lvlGain = baseGain * GameManager.Instance.RetrieveCurrentLevel();
 
         for (int row = 0; row < rows; row++)
         {
@@ -68,7 +74,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if(!canMove) { return; }
 
-        EnemySpawnPoint.transform.position += movDirection * speed * Time.deltaTime;
+        EnemySpawnPoint.transform.position += movDirection * (speed + lvlGain) * Time.deltaTime;
 
         Vector3 leftBound = Camera.main.ViewportToWorldPoint(Vector3.zero);
         Vector3 rightBound = Camera.main.ViewportToWorldPoint(Vector3.right);
@@ -86,17 +92,16 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    public int ReturnEnemiesLeft()
-    {
-        return EnemySpawnPoint.transform.childCount;
-    }
+    public int ReturnEnemiesLeft() {  return EnemySpawnPoint.transform.childCount; }
+    public Vector3 ReturnSpawnPosition() { return EnemySpawnPoint.transform.position; }
+
 
     public void SwapOrientation() //Swap orientation of movement and the swarm advances one spot towards the player
     {
         movDirection.x *= -1f;
 
         var curPos = EnemySpawnPoint.transform.position;
-        curPos.y -= .2f;
+        curPos.y -= .3f;
 
         EnemySpawnPoint.transform.position = curPos;
     }

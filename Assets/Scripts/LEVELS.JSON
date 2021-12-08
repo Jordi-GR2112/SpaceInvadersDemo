@@ -1,0 +1,35 @@
+{
+	"levels": [
+		
+		{
+			"path" : "Backgrounds/nebula1"
+		},
+		{
+			"path" : "Backgrounds/nebula2"
+		},
+		{
+			"path" : "Backgrounds/nebula3"
+		},
+		{
+			"path" : "Backgrounds/nebula4"
+		},
+		{
+			"path" : "Backgrounds/nebula5"
+		},
+		{
+			"path" : "Backgrounds/nebula6"
+		},
+		{
+			"path" : "Backgrounds/nebula7"
+		},
+		{
+			"path" : "Backgrounds/nebula8"
+		},
+		{
+			"path" : "Backgrounds/nebula9"
+		},
+		{
+			"path" : "Backgrounds/nebula10"
+		}
+	]
+}
